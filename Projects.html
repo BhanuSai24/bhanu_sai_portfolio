@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Bhanu Sai</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --secondary: #a29bfe;
+            --dark: #0a0a0a;
+            --light: #ffffff;
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 10%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .back-button {
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.3s;
+        }
+
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+
+        /* Project Details */
+        .project-container {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .project-title {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .project-subtitle {
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+
+        .project-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .project-details {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .project-image {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+
+        .features-list {
+            list-style: none;
+        }
+
+        .features-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .features-list li::before {
+            content: '•';
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+        }
+
+        .project-sidebar {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            height: fit-content;
+            backdrop-filter: blur(10px);
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tech-tag {
+            background: rgba(108, 92, 231, 0.1);
+            color: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+        }
+
+        .project-links {
+            margin-top: 2rem;
+        }
+
+        .project-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--light);
+            text-decoration: none;
+            margin-bottom: 1rem;
+            padding: 0.8rem 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .project-link:hover {
+            background: var(--primary);
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 768px) {
+            .project-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Back to Portfolio
+        </a>
+    </nav>
+
+    <div class="project-container">
+        <div id="project-details">
+            <!-- Content will be loaded dynamically -->
+        </div>
+    </div>
+
+    <script>
+        // Project data
+        const projects = {
+    'ai-travel-planner': {
+        title: 'AI Travel Planner',
+        subtitle: 'Mobile app using React Native and GEMINI AI',
+        image: './assets/AI Travel Planner text in the center of an image similar to the reference picture.png',
+        description: 'AI Travel Planner (09/2024 - 09/2024) Developed a mobile app using React Native and GEMINI AI to provide personalized travel recommendations by fetching real-time hotel and flight details. Firebase was implemented for secure user data storage, and the app was tested on an Android Emulator for optimal performance and responsiveness. Frontend: React Native | Backend: Firebase | Data Storage: Firebase Database',
+                features: [
+                    'Personalized travel recommendations using GEMINI AI',
+                    'Real-time hotel and flight details',
+                    'User authentication using Firebase',
+                    'Responsive mobile interface',
+                    'Advanced response-generation capabilities'
+                ],
+            
+        technologies: ['React Native', 'Firebase', 'GEMINI AI', 'Node.js'],
+        links: {
+            github: 'https://github.com/BhanuSai24/ai-travel-planner',
+            live: 'https://ai-travel-planner.com'
+        }
+    },
+    'hotel-reservation': {
+        title: 'Hotel Reservation System',
+        subtitle: 'Web application for restaurant reservations',
+        image: './assets/Hotel reservation system text displayed with big size in the center.png',
+        description: 'The "Little Lemon Restaurant Reservation System" is a web application where reservation data is stored in JSON files and can be viewed upon clicking reservation details. The project employs Express.js for handling backend operations and React.js for the frontend interface, providing an interactive user experience. The system allows customers to book tables, view available slots, and manage reservations efficiently. The admin panel enables restaurant owners to manage bookings, update availability, and oversee customer reservations seamlessly.',
+        features: [
+            'Reservation data stored in JSON files',
+    'Interactive user interface built with React.js',
+    'Backend powered by Express.js and Node.js',
+    'Customers can view available slots and book tables',
+    'Admin panel for managing restaurant reservations',
+    'Real-time updates on booking status',
+    'User-friendly dashboard for both customers and admins',
+    'Fully responsive design for mobile and desktop users'
+        ],
+        technologies: ['React.js', 'Node.js', 'Express.js', 'JSON Storage'],
+        links: {
+            github: 'https://github.com/BhanuSai24/hotel-reservation',
+            live: 'https://hotel-reservation-demo.com'
+        }
+    },
+    'vehicle-simulation': {
+        title: 'Visual Simulation of Vehicles',
+        subtitle: 'Interactive vehicle simulation application',
+        image: './assets/an image of a webpage with a sidebar containing Home, add scenario, add vehicle, all scenarios as options, and a graph in the main content with vehicle simulation text in the center.png',
+        description: 'The project aims to develop a visual simulation application using React.js for the frontend and Express.js for the backend. The application allows users to create, display, update, and delete scenarios and vehicles. A scenario can have multiple vehicles, and vehicles can be moved based on user input within a graph. The system ensures seamless user interaction, real-time updates, and efficient data management with MySQL. Additional features include user authentication, role-based access control, and performance optimizations for large-scale simulations.',
+
+features: [
+    'User-friendly interface built with React.js',
+    'Real-time vehicle movement and scenario updates',
+    'Create, update, and delete vehicles and scenarios dynamically',
+    'Graph-based vehicle movement visualization',
+    'Optimized backend using Node.js and Express.js',
+    'Data storage and retrieval managed with MySQL',
+    'Interactive UI with seamless user experience',
+    'Customizable vehicle configurations and route planning',
+    'Role-based access control for different user levels',
+    'Performance optimizations for handling large datasets'
+],
+        technologies: ['React.js', 'Express.js', 'MySQL', 'WebGL'],
+        links: {
+            github: 'https://github.com/BhanuSai24/vehicle-simulation',
+            live: 'https://vehicle-simulation-demo.com'
+        }
+    }
+};
+
+        // Load project details
+        function loadProjectDetails() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const projectId = urlParams.get('project');
+            const project = projects[projectId];
+
+            if (!project) {
+                window.location.href = 'index.html';
+                return;
+            }
+
+            const content = `
+                <div class="project-header">
+                    <h1 class="project-title">${project.title}</h1>
+                    <p class="project-subtitle">${project.subtitle}</p>
+                </div>
+                
+                <div class="project-content">
+                    <div class="project-details">
+                        <img src="${project.image}" alt="${project.title}" class="project-image">
+                        <h2 class="section-title">Overview</h2>
+                        <p>${project.description}</p>
+                        
+                        <h2 class="section-title">Key Features</h2>
+                        <ul class="features-list">
+                            ${project.features.map(feature => `<li>${feature}</li>`).join('')}
+                        </ul>
+                    </div>
+                    
+                    <div class="project-sidebar">
+                        <h2 class="section-title">Technologies</h2>
+                        <div class="tech-stack">
+                            ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('project-details').innerHTML = content;
+        }
+
+        // Load details when page loads
+        window.onload = loadProjectDetails;
+    </script>
+</body>
+</html>

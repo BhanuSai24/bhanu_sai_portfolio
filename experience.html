@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Experience - Bhanu Sai</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --secondary: #a29bfe;
+            --dark: #0a0a0a;
+            --light: #ffffff;
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 10%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .back-button {
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.3s;
+        }
+
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+
+        .experience-container {
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .experience-header {
+            text-align: left;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .company-logo {
+            width: 80px;
+            height: 80px;
+            background: var(--primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .company-logo i {
+            font-size: 2.5rem;
+            color: var(--light);
+        }
+
+        .role-title {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .company-name {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-meta {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+            color: var(--secondary);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .responsibilities {
+            margin-top: 3rem;
+        }
+
+        .section-title {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .responsibilities-list {
+            list-style: none;
+        }
+
+        .responsibilities-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .responsibilities-list li::before {
+            content: '•';
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+        }
+
+        .skills-section {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .skill-tag {
+            background: rgba(108, 92, 231, 0.1);
+            color: var(--primary);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+        }
+
+        .alvion-logo {
+            width: 100px;
+            height: 100px;
+        }
+
+        @media (max-width: 768px) {
+            .experience-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Back to Portfolio
+        </a>
+    </nav>
+
+    <div class="experience-container">
+        <div class="experience-header">
+            <div >
+                <img src="./assets/favicon1.png" class="alvion-logo"/>
+            </div>
+            <h1 class="role-title">Software Engineer</h1>
+            <p class="company-name">Alvion Global Solutions Pvt Ltd</p>
+            <div class="experience-meta">
+                <div class="meta-item">
+                    <i class="far fa-calendar"></i>
+                    <span>Sep 2024 - Present · 5 mos</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Chittoor, Andhra Pradesh, India · Remote</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="responsibilities">
+            <h2 class="section-title">Key Responsibilities & Achievements</h2>
+            <ul class="responsibilities-list">
+                <li>Learned and applied React Native and WordPress within the first month, transitioning seamlessly to hands-on project work in month two.</li>
+                <li>Completed an AI-powered project in React Native for an "AI Travel Planner," integrating advanced response-generation capabilities.</li>
+                <li>Added and managed product listings and details for a WooCommerce-based website, Teealley, a platform for selling t-shirts.</li>
+                <li>Installed and configured plugins to display product discounts, enhancing user experience and functionality.</li>
+                <li>Conducted manual testing to identify and resolve website issues, improving site stability and usability.</li>
+                <li>Resolved a synchronization issue with Shiprocket where products were not syncing. Coordinated with the support team to troubleshoot and successfully fix the issue.</li>
+                <li>Developed and implemented pages for adding Hotels, Room Types, Bed Types, Facilities, and Amenities, streamlining the content management process.</li>
+                <li>Developed key modules in the third month, including Hotels, Room Types, Reservations, and Active Bookings, contributing to the core functionality of the project.</li>
+            </ul>
+        </div>
+
+        <div class="skills-section">
+            <h2 class="section-title">Technologies Used</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">React Native</span>
+                <span class="skill-tag">WordPress</span>
+                <span class="skill-tag">WooCommerce</span>
+                <span class="skill-tag">React.js</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">API Integration</span>
+                <span class="skill-tag">Firebase</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

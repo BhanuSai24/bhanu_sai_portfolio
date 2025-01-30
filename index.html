@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhanu Sai - Portfolio</title>
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">PORTFOLIO</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+        </div>
+        <a href="#contact" class="cta-button">Let's Talk</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hello-text">Hello, my name is</p>
+            <h1 class="name">Bhanu Sai<br>Mamidi</h1>
+            <p class="title">Front End Developer</p>
+            <div class="social-links">
+                <a href="mailto:bhanusaimamidi@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/bhanu-sai-mamidi"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/BhanuSai24"><i class="fab fa-github"></i></a>
+                <a href="tel:+918688550820"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="./assets/picture-removebg-preview.png" alt="Bhanu Sai Mamidi">
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="grid">
+            <div class="card education-card">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                    <h3>Bachelor of Technology</h3>
+                    <p>Sri Venkateswara College of Engineering</p>
+                    <p>2019 - 2023 | CGPA: 8.24</p>
+                </div>
+            </div>
+            <div class="card education-card">
+                <i class="fas fa-university"></i>
+                <div>
+                    <h3>Intermediate</h3>
+                    <p>Sri Gayatri Jr College</p>
+                    <p>2017 - 2019 | CGPA: 10</p>
+                </div>
+            </div>
+            <div class="card education-card">
+                <i class="fas fa-school"></i>
+                <div>
+                    <h3>Secondary School</h3>
+                    <p>Sri Chaitanya EM School</p>
+                    <p>2016 - 2017 | CGPA: 9.3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="grid">
+            <div class="skill-card">
+                <img src="./assets/react-logo-removebg-preview.png" alt="React">
+                <span>React JS</span>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/react_native-removebg-preview.png" alt="React Native">
+                <span>React Native</span>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/python-removebg-preview.png" alt="Python">
+                <span>Python</span>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/html-removebg-preview.png" alt="HTML/CSS">
+                <span>HTML/CSS</span>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/Js-removebg-preview.png" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/mysql-removebg-preview.png" alt="MySQL">
+                <span>MySQL</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid">
+            <div class="card" onclick="window.location.href='projects.html?project=ai-travel-planner'">
+                <img src="/assets/AI Travel Planner text in the center of an image similar to the reference picture.png" alt="AI Travel Planner">
+                <h3>AI Travel Planner</h3>
+                <p>Mobile app using React Native and GEMINI AI for personalized travel recommendations</p>
+                <p>Technologies: React Native, Firebase</p>
+                <div class="card-overlay">
+                    <span>View Details</span>
+                </div>
+            </div>
+            <div class="card" onclick="window.location.href='projects.html?project=hotel-reservation'">
+                <img src="./assets/Hotel reservation system text displayed with big size in the center.png" alt="Hotel Reservation">
+                <h3>Hotel Reservation System</h3>
+                <p>Web application for restaurant reservations using React.js and Express.js</p>
+                <p>Technologies: React.js, Node.js, Express.js</p>
+                <div class="card-overlay">
+                    <span>View Details</span>
+                </div>
+            </div>
+    
+            <!-- Vehicle Simulation -->
+            <div class="card" onclick="window.location.href='projects.html?project=vehicle-simulation'">
+                <img src="./assets/an image of a webpage with a sidebar containing Home, add scenario, add vehicle, all scenarios as options, and a graph in the main content with vehicle simulation text in the center.png" alt="Visual Simulation">
+                <h3>Visual Simulation of Vehicles</h3>
+                <p>Visual simulation application for creating and managing scenarios</p>
+                <p>Technologies: React.js, Express.js, MySQL</p>
+                <div class="card-overlay">
+                    <span>View Details</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Experience Section -->
+<section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="experience-grid">
+        <!-- Current Job -->
+        <div class="experience-card" onclick="window.location.href='experience.html?role=software-engineer'">
+            <div class="experience-header">
+                <i class="fas fa-briefcase experience-icon"></i>
+                <div>
+                    <h3>Software Engineer</h3>
+                    <p class="company">Alvion Global Solutions Pvt Ltd</p>
+                    <p class="duration">Sep 2024 - Present · Remote</p>
+                </div>
+            </div>
+            <div class="experience-content">
+                <ul class="experience-list">
+                    <li>Gained expertise in React Native & WordPress, developed an AI Travel Planner, managed WooCommerce product listings, optimized Shiprocket synchronization, conducted manual testing, and built key hotel management modules for enhanced functionality.</li>
+                    
+                </ul>
+                <div class="skills-tags">
+                    <span>React.js</span>
+                    <span>WordPress</span>
+                    <span>React Native</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Internship -->
+        <div class="experience-card">
+            <div class="experience-header">
+                <i class="fas fa-laptop-code experience-icon"></i>
+                <div>
+                    <h3>Web Development Intern</h3>
+                    <p class="company">Gauravgo Games Technologies Private Limited</p>
+                    <p class="duration">2023</p>
+                </div>
+            </div>
+            <div class="experience-content">
+                <p class="internship-description">
+                    Successfully completed the Web Development and hosting Internship Program. Worked on various web development projects and gained hands-on experience in modern web technologies.
+                </p>
+                <a href="https://drive.google.com/file/d/1zM3XlG5qjcIr-dltNHYhOtPgF4bfzjLb/view?usp=sharing" class="certificate-link">
+                    View Certificate <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <h2 class="section-title">Certificates</h2>
+        <div class="certificates-grid">
+            <div class="certificate-card">
+                <i class="fab fa-react certificate-icon"></i>
+                <div class="certificate-content">
+                    <h3>React Basics by Meta</h3>
+                    <p>09/2023</p>
+                    <a href="https://drive.google.com/file/d/1rkNgtaq59RjBeebWJ50jUBXzOmvqZt9P/view" target="_blank" class="certificate-link">
+                        View Certificate <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="certificate-card">
+                <i class="fab fa-python certificate-icon"></i>
+                <div class="certificate-content">
+                    <h3>Introduction to Python Programming</h3>
+                    <p>06/2022</p>
+                    <a href="https://drive.google.com/file/d/1DJDd7QBLk9TBLRRtSDbS55n-oZz6a2aX/view?usp=sharing" target="_blank" class="certificate-link">
+                        View Certificate <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="certificate-card">
+                <i class="fab fa-html5 certificate-icon"></i>
+                <div class="certificate-content">
+                    <h3>HTML and CSS in depth by Meta</h3>
+                    <p>08/2023</p>
+                    <a href="https://drive.google.com/file/d/1F4L4-TyoyF4Z5AVcAX5CPAURBtZ2NhAe/view?usp=sharing" target="_blank" class="certificate-link">
+                        View Certificate <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="certificate-card">
+                <i class="fab fa-js certificate-icon"></i>
+                <div class="certificate-content">
+                    <h3>Programming with JavaScript</h3>
+                    <p>08/2023</p>
+                    <a href="https://drive.google.com/file/d/14j6ay6i7Bf8yO4TWbKzcI91lEOxjK_wn/view?usp=sharing" target="_blank" class="certificate-link">
+                        View Certificate <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="certificate-card">
+                <i class="fas fa-paint-brush certificate-icon"></i>
+                <div class="certificate-content">
+                    <h3>Principles of UX/UI designing</h3>
+                    <p>10/2023</p>
+                    <a href="https://drive.google.com/file/d/1jk0ngFIBT0FZ_0wk5I6coT-dLgGD5HWr/view?usp=sharing" target="_blank" class="certificate-link">
+                        View Certificate <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="footer-content">
+        <!-- Top Section -->
+        <div class="footer-main">
+            <div class="footer-info">
+                <h3 class="footer-name">Bhanu Sai Mamidi</h3>
+                <p class="footer-description">A passionate Front End Developer focused on creating interactive and user-friendly web applications.</p>
+                <div class="footer-social">
+                    <a href="mailto:bhanusaimamidi@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/bhanu-sai-mamidi" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/BhanuSai24" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="tel:+918688550820" aria-label="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Tirupati, Andhra Pradesh
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            +91 8688550820
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            bhanusaimamidi@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bhanu Sai Mamidi. All rights reserved.</p>
+            <p>Made with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+        </div>
+    </div>
+</footer>
+</div>
+
+<script>
+    // Intersection Observer for scroll animations
+    const sections = document.querySelectorAll('section');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+</script>
+</body>
+</html>
+
+
+    
